@@ -4899,3 +4899,1895 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-01-10 11:11:01 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (3.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (2.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  Rendering products/index.html.erb within layouts/review_site
+  [1m[36mProduct Load (3.9ms)[0m  [1m[34mSELECT  `products`.* FROM `products` ORDER BY id ASC LIMIT 20[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 3[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 4[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 5[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 6[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 7[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 9[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 11[0m
+  [1m[36mReview Load (3.2ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 12[0m
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 13[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 14[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 15[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 16[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 17[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 18[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 19[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 20[0m
+  Rendered products/index.html.erb within layouts/review_site (79.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 1828ms (Views: 1707.6ms | ActiveRecord: 56.7ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for ::1 at 2019-01-10 11:11:03 +0900
+Started GET "/assets/ranking.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-01-10 11:11:03 +0900
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-01-10 11:11:03 +0900
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-01-10 11:11:03 +0900
+Started GET "/assets/review_site.self-350ae9fad353a7f81764e35385d612af58492871ed080f6bad84ccc5ae7e468a.css?body=1" for ::1 at 2019-01-10 11:11:03 +0900
+  [1m[35m (4.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2019-01-10 11:11:04 +0900
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for ::1 at 2019-01-10 11:11:04 +0900
+  [1m[35m (19.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 11:11:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/assets/bambi-1.0.0-af913e683a89be769a6b0aa63c7aaffd8dbfed2d7b7a20df79aeecbbdbf28e96.ttf?20140712" for ::1 at 2019-01-10 11:11:04 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT GET_LOCK('876994916022336720', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddIndexToProducts (20190110025351)
+  [1m[35m (51.3ms)[0m  [1m[35mCREATE  INDEX `index_products_on_title`  ON `products` (`title`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190110025351')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('876994916022336720')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-01-10 13:28:38 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  Rendering products/index.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` ORDER BY id ASC LIMIT 20[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 3[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 4[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 5[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 6[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 7[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 9[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 11[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 12[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 13[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 14[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 15[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 16[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 17[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 18[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 19[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 20[0m
+  Rendered products/index.html.erb within layouts/review_site (74.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 611ms (Views: 547.2ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/assets/search.self-fc01192387c5237338fcac46bef24f80b457999c37fa47515ba6f579c0756e68.js?body=1" for ::1 at 2019-01-10 13:28:39 +0900
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 13:28:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/users/1" for ::1 at 2019-01-10 13:28:51 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mActiveStorage::Attachment Load (5.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'avatar' LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`user_id` = 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (106.1ms)
+Completed 200 OK in 167ms (Views: 147.2ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--347a2aa9141ccaba8fbae3f75216d7da43a9e4d2/%E5%86%99%E7%9C%9F%EF%BC%882018-11-30%2016.55%EF%BC%89.jpg" for ::1 at 2019-01-10 13:28:51 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--347a2aa9141ccaba8fbae3f75216d7da43a9e4d2", "filename"=>"写真（2018-11-30 16.55）"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+[36m  Disk Storage (14.3ms) [0m[34mGenerated URL for file at key: fqjTV9ULttYUvAt26h3QKjiz (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFtY1dwVVZqbFZUSFIwV1ZWMlFYUXlObWd6VVV0cWFYb0dPZ1pGVkE9PSIsImV4cCI6IjIwMTktMDEtMTBUMDQ6MzM6NTEuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--c18bbb6defcdd5dc1f685243fd08538e695d0eb1/%E5%86%99%E7%9C%9F%EF%BC%882018-11-30%2016.55%EF%BC%89.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22%253F%253F%253F2018-11-30+16.55%253F.jpg%22%3B+filename%2A%3DUTF-8%27%27%25E5%2586%2599%25E7%259C%259F%25EF%25BC%25882018-11-30%252016.55%25EF%25BC%2589.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFtY1dwVVZqbFZUSFIwV1ZWMlFYUXlObWd6VVV0cWFYb0dPZ1pGVkE9PSIsImV4cCI6IjIwMTktMDEtMTBUMDQ6MzM6NTEuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--c18bbb6defcdd5dc1f685243fd08538e695d0eb1/%E5%86%99%E7%9C%9F%EF%BC%882018-11-30%2016.55%EF%BC%89.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22%253F%253F%253F2018-11-30+16.55%253F.jpg%22%3B+filename%2A%3DUTF-8%27%27%25E5%2586%2599%25E7%259C%259F%25EF%25BC%25882018-11-30%252016.55%25EF%25BC%2589.jpg
+Completed 302 Found in 21ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFtY1dwVVZqbFZUSFIwV1ZWMlFYUXlObWd6VVV0cWFYb0dPZ1pGVkE9PSIsImV4cCI6IjIwMTktMDEtMTBUMDQ6MzM6NTEuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--c18bbb6defcdd5dc1f685243fd08538e695d0eb1/%E5%86%99%E7%9C%9F%EF%BC%882018-11-30%2016.55%EF%BC%89.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22%253F%253F%253F2018-11-30+16.55%253F.jpg%22%3B+filename%2A%3DUTF-8%27%27%25E5%2586%2599%25E7%259C%259F%25EF%25BC%25882018-11-30%252016.55%25EF%25BC%2589.jpg" for ::1 at 2019-01-10 13:28:51 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"%3F%3F%3F2018-11-30 16.55%3F.jpg\"; filename*=UTF-8''%E5%86%99%E7%9C%9F%EF%BC%882018-11-30%2016.55%EF%BC%89.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFtY1dwVVZqbFZUSFIwV1ZWMlFYUXlObWd6VVV0cWFYb0dPZ1pGVkE9PSIsImV4cCI6IjIwMTktMDEtMTBUMDQ6MzM6NTEuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--c18bbb6defcdd5dc1f685243fd08538e695d0eb1", "filename"=>"写真（2018-11-30 16.55）"}
+[36m  Disk Storage (1.2ms) [0m[34mDownloaded file from key: fqjTV9ULttYUvAt26h3QKjiz[0m
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products/5" for ::1 at 2019-01-10 13:29:16 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+  Rendering products/show.html.erb within layouts/review_site
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 5[0m
+  Rendered products/show.html.erb within layouts/review_site (2.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 47ms (Views: 34.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2019-01-10 13:30:38 +0900
+Processing by ProductsController#index as HTML
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (19.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  Rendering products/index.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` ORDER BY id ASC LIMIT 20[0m
+  [1m[36mReview Load (5.8ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 3[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 4[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 5[0m
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 6[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 7[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 9[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 11[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 12[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 13[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 14[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 15[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 16[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 17[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 18[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 19[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 20[0m
+  Rendered products/index.html.erb within layouts/review_site (43.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 123ms (Views: 69.4ms | ActiveRecord: 38.8ms)
+
+
+Started GET "/products/3" for ::1 at 2019-01-10 13:30:57 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  Rendering products/show.html.erb within layouts/review_site
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 3[0m
+  Rendered products/show.html.erb within layouts/review_site (2.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 46ms (Views: 34.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-01-10 13:31:16 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'avatar' LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`user_id` = 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 56ms (Views: 50.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/1" for ::1 at 2019-01-10 13:31:20 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'avatar' LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`user_id` = 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 61ms (Views: 55.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/1" for ::1 at 2019-01-10 13:31:21 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'avatar' LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`user_id` = 1[0m
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 63ms (Views: 54.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2019-01-10 13:31:27 +0900
+Processing by ProductsController#index as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  Rendering products/index.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` ORDER BY id ASC LIMIT 20[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 3[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 4[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 5[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 6[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 7[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 9[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 11[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 12[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 13[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 14[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 15[0m
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 16[0m
+  [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 17[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 18[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 19[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 20[0m
+  Rendered products/index.html.erb within layouts/review_site (41.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 143ms (Views: 60.3ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/products/4" for ::1 at 2019-01-10 13:32:43 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  Rendering products/show.html.erb within layouts/review_site
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 4[0m
+  Rendered products/show.html.erb within layouts/review_site (2.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 28.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products/search" for ::1 at 2019-01-10 13:32:57 +0900
+Processing by ProductsController#search as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (2.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (5.9ms)
+Completed 200 OK in 46ms (Views: 32.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/products/search" for ::1 at 2019-01-10 13:52:06 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ProductsController#search as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (3.2ms)
+Completed 200 OK in 42ms (Views: 27.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 13:52:06 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search" for ::1 at 2019-01-10 13:54:54 +0900
+Processing by ProductsController#search as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (4.8ms)
+Completed 200 OK in 95ms (Views: 82.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/search.self-8a99f3c9da54f1a1c140168d1c04d9912cdfbcfea76295ce847323361e92da3e.js?body=1" for ::1 at 2019-01-10 13:54:54 +0900
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 13:54:54 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 13:54:58 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (7.6ms)
+Completed 200 OK in 53ms (Views: 40.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 13:54:59 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.8ms)
+Completed 200 OK in 41ms (Views: 31.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 13:54:59 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 41ms (Views: 30.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search" for ::1 at 2019-01-10 13:55:17 +0900
+Processing by ProductsController#search as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (4.2ms)
+Completed 200 OK in 95ms (Views: 85.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/search.self-e7651cb2818c278132e9de060af330cdbc2cf41892b2c471617ce45e4a52882f.js?body=1" for ::1 at 2019-01-10 13:55:17 +0900
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 13:55:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 13:55:21 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.8ms)
+Completed 200 OK in 39ms (Views: 29.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 13:55:21 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.6ms)
+Completed 200 OK in 41ms (Views: 31.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 13:55:22 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.8ms)
+Completed 200 OK in 42ms (Views: 30.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/products/search?keyword=aaaa" for ::1 at 2019-01-10 13:55:23 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaaa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.5ms)
+Completed 200 OK in 39ms (Views: 28.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 13:55:24 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.8ms)
+Completed 200 OK in 40ms (Views: 29.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 13:55:24 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.2ms)
+Completed 200 OK in 39ms (Views: 28.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 13:55:25 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (4.0ms)
+Completed 200 OK in 41ms (Views: 30.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=" for ::1 at 2019-01-10 13:55:25 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>""}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (5.5ms)
+Completed 200 OK in 44ms (Views: 34.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/products/search" for ::1 at 2019-01-10 13:55:51 +0900
+Processing by ProductsController#search as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (5.9ms)
+Completed 200 OK in 48ms (Views: 36.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 13:55:52 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 13:55:54 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.2ms)
+Completed 200 OK in 42ms (Views: 31.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 13:55:54 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 43ms (Views: 30.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 13:55:55 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.0ms)
+Completed 200 OK in 41ms (Views: 32.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products/search?keyword=" for ::1 at 2019-01-10 13:55:56 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>""}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (4.4ms)
+Completed 200 OK in 43ms (Views: 32.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:13:15 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.9ms)
+Completed 200 OK in 42ms (Views: 30.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:13:15 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 44ms (Views: 32.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=aa" for ::1 at 2019-01-10 14:13:16 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"aa"}
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.6ms)
+Completed 200 OK in 132ms (Views: 117.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/search.self-c18b94c6066474dd8aee644531455fb7ced9e9e1d66a5acf9954cfe11c56ede8.js?body=1" for ::1 at 2019-01-10 14:13:17 +0900
+Started GET "/products/search?utf8=%E2%9C%93&keyword=aa" for ::1 at 2019-01-10 14:13:35 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.3ms)
+Completed 200 OK in 48ms (Views: 36.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:13:39 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (9.2ms)
+Completed 200 OK in 49ms (Views: 36.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 14:13:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:13:39 +0900
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 42ms (Views: 30.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 14:13:42 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.5ms)
+Completed 200 OK in 38ms (Views: 28.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=aaaa" for ::1 at 2019-01-10 14:13:42 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaaa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.0ms)
+Completed 200 OK in 40ms (Views: 30.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=aaaa" for ::1 at 2019-01-10 14:13:43 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"aaaa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaaa%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.6ms)
+Completed 200 OK in 61ms (Views: 49.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:13:47 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.7ms)
+Completed 200 OK in 49ms (Views: 34.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 14:13:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:13:47 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (3.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.0ms)
+Completed 200 OK in 52ms (Views: 35.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 14:13:47 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 39ms (Views: 30.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/products/search?keyword=aaaa" for ::1 at 2019-01-10 14:13:47 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaaa"}
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.0ms)
+Completed 200 OK in 44ms (Views: 32.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products/search?keyword=aaaaa" for ::1 at 2019-01-10 14:13:48 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaaaa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaaaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.9ms)
+Completed 200 OK in 42ms (Views: 31.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products/search?keyword=aaaa" for ::1 at 2019-01-10 14:13:49 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaaa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.8ms)
+Completed 200 OK in 42ms (Views: 32.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 14:13:49 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.1ms)
+Completed 200 OK in 39ms (Views: 29.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:13:49 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 38ms (Views: 28.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:13:50 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (4.3ms)
+Completed 200 OK in 44ms (Views: 33.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search?keyword=" for ::1 at 2019-01-10 14:13:50 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>""}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (5.2ms)
+Completed 200 OK in 46ms (Views: 35.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:13:51 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.6ms)
+Completed 200 OK in 44ms (Views: 33.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/products/search?keyword=" for ::1 at 2019-01-10 14:13:52 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>""}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (5.4ms)
+Completed 200 OK in 45ms (Views: 34.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:13:55 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.6ms)
+Completed 200 OK in 40ms (Views: 30.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search?keyword=" for ::1 at 2019-01-10 14:14:01 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>""}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (9.6ms)
+Completed 200 OK in 49ms (Views: 39.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:14:02 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 37ms (Views: 28.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:14:03 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.2ms)
+Completed 200 OK in 48ms (Views: 32.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/products/search?keyword=" for ::1 at 2019-01-10 14:14:04 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>""}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (4.2ms)
+Completed 200 OK in 40ms (Views: 31.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/products/search?keyword=ss" for ::1 at 2019-01-10 14:14:05 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"ss"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%ss%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.9ms)
+Completed 200 OK in 40ms (Views: 30.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=sst" for ::1 at 2019-01-10 14:14:06 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"sst"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%sst%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 37ms (Views: 28.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=ssta" for ::1 at 2019-01-10 14:14:06 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"ssta"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%ssta%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.7ms)
+Completed 200 OK in 40ms (Views: 29.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products/search?keyword=sst" for ::1 at 2019-01-10 14:14:08 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"sst"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%sst%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.9ms)
+Completed 200 OK in 38ms (Views: 29.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search?keyword=s" for ::1 at 2019-01-10 14:14:10 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"s"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%s%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.6ms)
+Completed 200 OK in 40ms (Views: 30.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=sttt" for ::1 at 2019-01-10 14:14:13 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"sttt"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%sttt%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.9ms)
+Completed 200 OK in 37ms (Views: 27.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products/search?keyword=sttta" for ::1 at 2019-01-10 14:14:13 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"sttta"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%sttta%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.8ms)
+Completed 200 OK in 40ms (Views: 29.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search?keyword=sttt" for ::1 at 2019-01-10 14:14:15 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"sttt"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%sttt%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 37ms (Views: 27.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=stt" for ::1 at 2019-01-10 14:14:15 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"stt"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%stt%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 37ms (Views: 27.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=st" for ::1 at 2019-01-10 14:14:15 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"st"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%st%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.3ms)
+Completed 200 OK in 38ms (Views: 28.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=sta" for ::1 at 2019-01-10 14:14:17 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"sta"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%sta%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.4ms)
+Completed 200 OK in 38ms (Views: 29.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products/search?keyword=st" for ::1 at 2019-01-10 14:14:21 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"st"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%st%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.1ms)
+Completed 200 OK in 36ms (Views: 26.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=st" for ::1 at 2019-01-10 14:14:34 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"st"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%st%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.8ms)
+Completed 200 OK in 44ms (Views: 31.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 14:14:34 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:14:40 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.8ms)
+Completed 200 OK in 37ms (Views: 28.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:14:40 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 38ms (Views: 28.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=aa" for ::1 at 2019-01-10 14:14:42 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.5ms)
+Completed 200 OK in 64ms (Views: 51.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:15:37 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.7ms)
+Completed 200 OK in 40ms (Views: 29.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:15:44 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.3ms)
+Completed 200 OK in 36ms (Views: 27.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 14:15:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?keyword=" for ::1 at 2019-01-10 14:15:44 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>""}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (6.1ms)
+Completed 200 OK in 43ms (Views: 31.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:15:45 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.3ms)
+Completed 200 OK in 41ms (Views: 30.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:15:45 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.8ms)
+Completed 200 OK in 37ms (Views: 27.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 14:15:45 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.0ms)
+Completed 200 OK in 42ms (Views: 30.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/products/search?keyword=aaaa" for ::1 at 2019-01-10 14:15:47 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaaa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.0ms)
+Completed 200 OK in 37ms (Views: 28.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 14:15:48 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 38ms (Views: 29.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:15:48 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.6ms)
+Completed 200 OK in 35ms (Views: 26.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:15:48 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.9ms)
+Completed 200 OK in 42ms (Views: 31.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products/search?keyword=" for ::1 at 2019-01-10 14:15:49 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>""}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (4.3ms)
+Completed 200 OK in 43ms (Views: 33.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:15:50 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.7ms)
+Completed 200 OK in 41ms (Views: 31.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:15:52 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.8ms)
+Completed 200 OK in 40ms (Views: 29.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=aa" for ::1 at 2019-01-10 14:15:58 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.8ms)
+Completed 200 OK in 45ms (Views: 31.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:16:02 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.6ms)
+Completed 200 OK in 42ms (Views: 31.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:16:45 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.8ms)
+Completed 200 OK in 42ms (Views: 30.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/products/search?keyword=aaaa" for ::1 at 2019-01-10 14:16:48 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaaa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.0ms)
+Completed 200 OK in 44ms (Views: 33.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products/search?keyword=aaa" for ::1 at 2019-01-10 14:16:50 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aaa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aaa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.7ms)
+Completed 200 OK in 38ms (Views: 28.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:16:50 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.7ms)
+Completed 200 OK in 38ms (Views: 28.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:16:51 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (2.9ms)
+Completed 200 OK in 42ms (Views: 33.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 14:16:51 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?utf8=%E2%9C%93&keyword=a" for ::1 at 2019-01-10 14:16:52 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"a"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (4.4ms)
+Completed 200 OK in 42ms (Views: 30.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2019-01-10 14:16:52 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yoshimotoseiichi/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/products/search?keyword=a" for ::1 at 2019-01-10 14:16:58 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"a"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%a%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (3.5ms)
+Completed 200 OK in 46ms (Views: 34.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/products/search?keyword=aa" for ::1 at 2019-01-10 14:16:58 +0900
+Processing by ProductsController#search as JSON
+  Parameters: {"keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.json.jbuilder (1.7ms)
+Completed 200 OK in 47ms (Views: 30.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=aa" for ::1 at 2019-01-10 14:16:59 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"aa"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, `reviews`.`product_id` AS reviews_product_id FROM `reviews` GROUP BY `reviews`.`product_id` ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering products/search.html.erb within layouts/review_site
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE (title LIKE('%aa%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.9ms)
+Completed 200 OK in 44ms (Views: 33.4ms | ActiveRecord: 2.9ms)
+
+
